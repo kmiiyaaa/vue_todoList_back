@@ -16,8 +16,8 @@ public class WebConfig {
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/**")
 						.allowedOrigins("http://localhost:8081")
-						.allowedMethods("GET","POST","PUT","DELETE") //로그인 인증 필요 -> true 설정 필요
-					.allowCredentials(true);
+						.allowedMethods("GET","POST","PUT","DELETE") ;
+//						.allowCredentials(true);//로그인 인증 필요 -> true 설정 필요
 					}
 			 
 		};
